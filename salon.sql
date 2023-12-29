@@ -22,6 +22,8 @@ alter table appointments add foreign key(customer_id) REFERENCES customers(custo
 alter table appointments add foreign key(service_id) REFERENCES services(service_id);
 
 INSERT INTO services (service_id, name)
+VALUES (1, 'cut');
+INSERT INTO services (service_id, name)
 VALUES (2, 'color');
 INSERT INTO services (service_id, name)
 VALUES (3, 'perm');

@@ -1,0 +1,6 @@
+{
+	"[shellscript]": {
+		"editor.formatOnSave": true
+	},
+	"cSpell.enableFiletypes": ["!plaintext"]
+}
