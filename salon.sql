@@ -1,6 +1,4 @@
-DROP DATABASE salon;
-CREATE DATABASE salon WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'C.UTF-8' LC_CTYPE = 'C.UTF-8';
-ALTER DATABASE salon OWNER TO freecodecamp;
+CREATE DATABASE salon;
 
 \connect salon
 
@@ -23,4 +21,11 @@ add column name varchar;
 alter table appointments add foreign key(customer_id) REFERENCES customers(customer_id);
 alter table appointments add foreign key(service_id) REFERENCES services(service_id);
 
-
+INSERT INTO services (service_id, name)
+VALUES (2, 'color');
+INSERT INTO services (service_id, name)
+VALUES (3, 'perm');
+INSERT INTO services (service_id, name)
+VALUES (4, 'style');
+INSERT INTO services (service_id, name)
+VALUES (5, 'trim');
