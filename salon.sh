@@ -57,6 +57,7 @@ BEGIN_BOOKING() {
 
 	APPOINTMENT_RESULT=$($PSQL "insert into appointments (customer_id,service_id,time) values($CUSTOMER_ID,$1,'$SERVICE_TIME')")
 	echo -e "\nI have put you down for a $SERVICE_NAME_FORMATTED at $SERVICE_TIME, $CUSTOMER_NAME."
+	exit 0
 }
 
 MAIN_MENU
